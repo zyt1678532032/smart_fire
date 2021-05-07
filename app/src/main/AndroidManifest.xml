@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          package="cn.com.lttc.loginui">
+    <!-- mqtt -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"
+                     tools:ignore="ProtectedPermissions"/>
+    <uses-permission android:name="android.permission.MOUNT_FORMAT_FILESYSTEMS"
+                     tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <!--自定义application android:name=".SampleApplication"-->
+    <application
+            android:name=".SampleApplication"
+            android:allowBackup="true"
+            android:icon="@drawable/logo"
+            android:label="智慧消防"
+            android:roundIcon="@drawable/logo"
+            android:supportsRtl="true"
+            android:usesCleartextTraffic="true"
+            android:theme="@style/AppTheme"
+            tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".WelcomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+                android:name=".MainActivity"
+                android:configChanges="keyboardHidden|orientation"
+                android:launchMode="singleTop"
+                android:screenOrientation="portrait"
+                android:theme="@style/Theme.AppCompat.NoActionBar"
+                android:windowSoftInputMode="stateHidden|adjustResize">
+        </activity>
+        <activity
+                android:name=".RegisterActivity"
+                android:configChanges="keyboardHidden|orientation"
+                android:label="注册"
+                android:launchMode="singleTop"
+                android:screenOrientation="portrait"
+                android:theme="@style/Theme.AppCompat.NoActionBar"
+                android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity
+                android:name=".ForgetPwdActivity"
+                android:theme="@style/Theme.AppCompat.NoActionBar"
+                android:configChanges="keyboardHidden|orientation"
+                android:label="密码找回"
+                android:launchMode="singleTop"
+                android:screenOrientation="portrait"
+                android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:name=".FiremanRadioTabActivity"/>
+        <activity android:name=".UserRadioTabActivity"/>
+        <activity android:name=".utils.MqttManager"/>
+        <activity android:name=".DetailPoliceActivity"/>
+
+        <!-- Mqtt服务 -->
+        <service android:name="org.eclipse.paho.android.service.MqttService"/>
+    </application>
+
+</manifest>

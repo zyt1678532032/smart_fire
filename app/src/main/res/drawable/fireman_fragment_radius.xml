@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--状态选择器-->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--当元素未被按压时触发-->
+    <item>
+        <shape>
+            <corners android:radius="20dp"/>
+            <solid android:color="#3AA250"/>
+        </shape>
+    </item>
+
+</selector>

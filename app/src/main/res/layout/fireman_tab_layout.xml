@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools" android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:background="@mipmap/background_fireman"
+              android:layout_height="match_parent">
+
+    <FrameLayout
+            android:id="@+id/home_container"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+    />
+
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+        <RadioGroup
+                android:id="@+id/radio_group_button"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@drawable/background_radio"
+                android:orientation="horizontal"
+                android:gravity="center"
+        >
+            <RadioButton
+                    android:id="@+id/radio_button_home"
+                    android:layout_width="81dp"
+                    android:layout_height="wrap_content"
+                    android:text="接警"
+                    android:paddingTop="14dp"
+                    android:textSize="15dp"
+                    android:layout_gravity="center"
+                    android:textColor="@android:color/black"
+                    android:drawableTop="@drawable/tab_warn_selector"
+                    style="@style/RadioGroupButtonStyle"
+            />
+            <RadioButton
+                    android:id="@+id/radio_button_discovery"
+                    android:layout_width="81dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="培训"
+                    android:paddingTop="8dp"
+                    android:textSize="15dp"
+                    android:textColor="@android:color/black"
+                    android:drawableTop="@drawable/tab_discovery_selector"
+                    style="@style/RadioGroupButtonStyle"
+            />
+            <RadioButton
+                    android:layout_width="81dp"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="-45dp"
+                    android:paddingTop="8dp"
+                    android:textSize="15dp"
+                    android:enabled="false"
+                    android:textColor="@android:color/black"
+                    style="@style/RadioGroupButtonStyle"
+            />
+            <RadioButton
+                    android:id="@+id/radio_button_profile"
+                    android:layout_width="81dp"
+                    android:layout_height="wrap_content"
+                    android:text="新闻"
+                    android:paddingTop="8dp"
+                    android:layout_gravity="center"
+                    android:textSize="15dp"
+                    android:textColor="@android:color/black" android:drawableTop="@drawable/tab_news_selector"
+                    style="@style/RadioGroupButtonStyle"
+            />
+            <RadioButton
+                    android:id="@+id/radio_button_my"
+                    android:layout_width="81dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="我的"
+                    android:textSize="15dp"
+                    android:paddingTop="8dp"
+                    android:textColor="@android:color/black" android:drawableTop="@drawable/tab_my_selector"
+                    style="@style/RadioGroupButtonStyle"
+            />
+        </RadioGroup>
+        <ImageView android:layout_width="match_parent"
+                   android:layout_height="21dp"
+                   android:background="#FFFFFF"
+                   android:layout_marginTop="79dp"
+                   android:layout_alignParentTop="true"
+                   android:layout_alignParentEnd="true"
+                   android:layout_marginEnd="0dp"/>
+    </RelativeLayout>
+</LinearLayout>

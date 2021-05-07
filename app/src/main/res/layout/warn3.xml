@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+                android:layout_height="match_parent">
+    <Button
+            android:background="@drawable/red_button"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="现场图片"
+            android:textColor="@android:color/white"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="243dp"
+    />
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler"
+            android:layout_width="301dp"
+            android:layout_height="94dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="33dp"
+            android:overScrollMode="never"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="28dp"/>
+    <Button
+            android:background="@drawable/red_button"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="现场视频"
+            android:textColor="@android:color/white"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="244dp"
+            android:layout_marginTop="8dp"
+            android:layout_below="@+id/recycler"/>
+    <ImageView
+            android:layout_width="96dp"
+            android:layout_height="83dp"
+            app:srcCompat="@drawable/add_img"
+            android:id="@+id/imageView3"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="240dp"
+            android:layout_marginTop="45dp"
+            android:layout_below="@+id/recycler"
+    />
+
+</RelativeLayout>

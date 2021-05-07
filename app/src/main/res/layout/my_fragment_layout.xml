@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:background="@mipmap/my_bg"
+                android:layout_height="match_parent">
+
+    <RelativeLayout android:layout_width="match_parent"
+                    android:background="@mipmap/my_bg2"
+                    android:layout_height="150dp">
+        <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                app:srcCompat="@mipmap/left2"
+                android:id="@+id/back_my"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="317dp"
+                android:layout_marginTop="16dp"
+                android:layout_alignParentTop="true"/>
+        <TextView
+                android:text="个 人 中 心"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView11"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="133dp"
+                android:layout_marginTop="15dp"
+                android:layout_alignParentTop="true"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:textSize="20dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout android:layout_width="321dp"
+                    android:layout_height="140dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@android:color/white"
+                    android:layout_marginTop="83dp">
+        <ImageView
+                android:layout_width="88dp"
+                android:layout_height="88dp"
+                app:srcCompat="@drawable/photo"
+                android:id="@+id/imageView10"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="204dp"
+                android:layout_marginTop="28dp"
+                android:layout_alignParentTop="true"/>
+        <TextView
+                android:text="时海西"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView15"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="131dp"
+                android:layout_marginTop="51dp"
+                android:layout_alignParentTop="true"
+                android:textColor="@android:color/black"/>
+        <TextView
+                android:text="上海松江大学城"
+                android:layout_width="wrap_content"
+                android:layout_height="26dp"
+                android:id="@+id/textView16"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="81dp"
+                android:layout_marginTop="74dp"
+                android:layout_alignParentTop="true"
+                android:textColor="@android:color/black"
+        />
+    </RelativeLayout>
+
+    <LinearLayout android:layout_width="361dp"
+                  android:layout_height="46dp"
+                  android:layout_alignParentEnd="true"
+                  android:layout_marginEnd="3dp"
+                  android:layout_marginTop="275dp"
+                  android:layout_alignParentTop="true">
+        <ImageView
+                android:layout_width="46dp"
+                android:layout_height="34dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                app:srcCompat="@mipmap/user"
+                android:id="@+id/imageView"
+        />
+        <TextView
+                android:text="个人资料"
+                android:layout_width="71dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView10"
+                android:textSize="15dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@android:color/black"/>
+
+        <ImageView
+                android:layout_width="43dp"
+                android:layout_height="19dp"
+                app:srcCompat="@drawable/right"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="160dp"
+                android:id="@+id/imageView2"
+        />
+    </LinearLayout>
+    <LinearLayout android:layout_width="361dp"
+                  android:layout_height="46dp"
+                  android:layout_alignParentEnd="true"
+                  android:layout_marginEnd="3dp"
+                  android:layout_marginTop="326dp"
+                  android:layout_alignParentTop="true">
+        <ImageView
+                android:layout_width="46dp"
+                android:layout_height="34dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                app:srcCompat="@mipmap/police2"
+        />
+        <TextView
+                android:text="历史报警"
+                android:layout_width="71dp"
+                android:layout_height="wrap_content"
+
+                android:textSize="15dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@android:color/black"/>
+
+        <ImageView
+                android:layout_width="43dp"
+                android:layout_height="19dp"
+                app:srcCompat="@drawable/right"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="160dp"
+
+        />
+    </LinearLayout>
+    <LinearLayout android:layout_width="361dp"
+                  android:layout_height="46dp"
+                  android:layout_marginEnd="3dp"
+                  android:layout_marginTop="377dp"
+                  android:layout_alignParentTop="true"
+                  android:layout_alignParentEnd="true">
+        <ImageView
+                android:layout_width="46dp"
+                android:layout_height="34dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                app:srcCompat="@mipmap/setting"
+        />
+        <TextView
+                android:text="设置"
+                android:layout_width="71dp"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@android:color/black"/>
+
+        <ImageView
+                android:layout_width="43dp"
+                android:layout_height="19dp"
+                app:srcCompat="@drawable/right"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="160dp"
+
+        />
+    </LinearLayout>
+    <LinearLayout android:layout_width="361dp"
+                  android:layout_height="46dp"
+                  android:layout_alignParentEnd="true"
+                  android:layout_marginEnd="2dp"
+                  android:layout_marginTop="428dp"
+                  android:layout_alignParentTop="true">
+        <ImageView
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_width="46dp"
+                android:layout_height="34dp"
+                app:srcCompat="@drawable/problem"
+        />
+        <TextView
+                android:text="问题反馈"
+                android:layout_width="71dp"
+                android:layout_height="wrap_content"
+
+                android:textSize="15dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@android:color/black"/>
+
+        <ImageView
+                android:layout_width="43dp"
+                android:layout_height="19dp"
+                app:srcCompat="@drawable/right"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="160dp"
+
+        />
+    </LinearLayout>
+
+
+</RelativeLayout>
