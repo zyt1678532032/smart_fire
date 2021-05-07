@@ -26,5 +26,9 @@ typora-root-url: assets
 
        ![](/assets/接警页面.png)
 
+    6.报警详情
+
+    ​  ![](/assets/报警详情.png)
+
 
 
