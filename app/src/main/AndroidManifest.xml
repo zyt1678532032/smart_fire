@@ -60,7 +60,6 @@
                 android:windowSoftInputMode="stateHidden|adjustResize"/>
         <activity android:name=".FiremanRadioTabActivity"/>
         <activity android:name=".UserRadioTabActivity"/>
-        <activity android:name=".utils.MqttManager"/>
         <activity android:name=".DetailPoliceActivity"/>
 
         <!-- Mqtt服务 -->
