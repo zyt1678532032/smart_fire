@@ -6,9 +6,13 @@ import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
+
 import androidx.appcompat.app.AppCompatActivity;
+
 import com.google.gson.Gson;
+
 import okhttp3.*;
+
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -17,6 +21,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class RegisterActivity extends AppCompatActivity implements View.OnClickListener {
+    private static final String TAG = "RegisterActivity";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -73,7 +78,7 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
                 okHttpClient.newCall(request).enqueue(new Callback() {
                     @Override
                     public void onFailure(Call call, IOException e) {
-
+                        Log.e(TAG, "注册失败");
                     }
 
                     @Override

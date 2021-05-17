@@ -30,6 +30,7 @@ import java.util.*;
 
 public class InfoFragment extends Fragment {
 
+    private static final String TAG = "InfoFragment";
     private String mFrom;
     private ListView listView;
     public static ArrayAdapter<String> adapter;
@@ -158,7 +159,6 @@ public class InfoFragment extends Fragment {
                             }
                         })
                         .create().show();
-//                adapter.notifyDataSetInvalidated();
                 //更信息报警信息
                 return true;
             }
@@ -210,7 +210,7 @@ public class InfoFragment extends Fragment {
                                     okHttpClient.newCall(request).enqueue(new Callback() {
                                         @Override
                                         public void onFailure(Call call, IOException e) {
-
+                                            Log.e(TAG, "接警失败");
                                         }
 
                                         @Override

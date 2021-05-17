@@ -16,11 +16,16 @@ import android.view.ViewGroup;
 import android.view.ViewTreeObserver;
 import android.view.animation.DecelerateInterpolator;
 import android.widget.*;
+
 import androidx.appcompat.app.AppCompatActivity;
+
 import cn.com.lttc.loginui.utils.MeasureScreenUtils;
 import cn.com.lttc.loginui.utils.MqttManager;
+
 import com.google.gson.Gson;
+
 import okhttp3.*;
+
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -31,7 +36,7 @@ import java.util.Map;
 public class MainActivity extends AppCompatActivity
         implements View.OnClickListener, View.OnFocusChangeListener
         , ViewTreeObserver.OnGlobalLayoutListener, TextWatcher {
-
+    private static final String TAG = "MainActivity";
     private ImageButton mIbNavigationBack;
     private LinearLayout mLlLoginPull;
     private View mLlLoginLayer;
@@ -91,6 +96,7 @@ public class MainActivity extends AppCompatActivity
                 okHttpClient.newCall(requestOk).enqueue(new Callback() {
                     @Override
                     public void onFailure(Call call, IOException e) {
+                        Log.e(TAG, "登录失败");
 
                     }
 
@@ -144,7 +150,7 @@ public class MainActivity extends AppCompatActivity
                 okHttpClient.newCall(requestOk2).enqueue(new Callback() {
                     @Override
                     public void onFailure(Call call, IOException e) {
-
+                        Log.e(TAG, "okhttp异步请求失败");
                     }
 
                     @Override

@@ -43,10 +43,6 @@ public class DetailFragment extends Fragment {
         button7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //                    JSONObject data = new JSONObject(getIntent().getStringExtra("data"));
-//                    Log.e("data", data.toString());
-//                    String firecar_num = data.getString("fireman_belong_firehouse");
-//                    String username = data.getString("fireman_username");
                 //调用接警接口,接警信息发送到用户订阅的主题(手机号)
                 // TODO: 2021/3/21 弹出页面选择消防车，先调用查询所有消防车接口,然后将信息展示出来进行选择,然后点击触发接警接口
                 //表单格式

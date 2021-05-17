@@ -4,6 +4,7 @@ import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.*;
 import android.widget.*;
 import androidx.annotation.Nullable;
@@ -27,6 +28,7 @@ import java.util.List;
  */
 
 public class WarnFragment extends Fragment {
+    private static final String TAG = "WarnFragment";
     private String mFrom;
     private UserWarnFragmentOne mWarnFragmentOne;
     private UserWarnFragmentTwo mWarnFragmentTwo;
@@ -60,14 +62,6 @@ public class WarnFragment extends Fragment {
         final TextView text1 = view.findViewById(R.id.text1);
         final TextView text2 = view.findViewById(R.id.text2);
         final TextView text3 = view.findViewById(R.id.text3);
-
-//        ImageView back = view.findViewById(R.id.bt_warn_back);
-//        back.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                getActivity().finish();
-//            }
-//        });
 
         getFragmentManager().beginTransaction()
                 .replace(R.id.warn_container, mWarnFragmentOne)
@@ -160,7 +154,7 @@ public class WarnFragment extends Fragment {
                                 okHttpClient.newCall(request).enqueue(new Callback() {
                                     @Override
                                     public void onFailure(Call call, IOException e) {
-                                        System.out.println("失败");
+                                        Log.e(TAG, "报警失败");
                                     }
 
                                     @Override
